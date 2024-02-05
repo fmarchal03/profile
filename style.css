@@ -1,0 +1,160 @@
+body{
+  font-family: Space Mono;
+  background-color: #000000;
+  color: #a8a8a8;
+  padding: 50px;
+  text-align: center
+}
+
+h1, h2, h3 {
+  font-family: 'Rubik Glitch Pop', system-ui;
+  Color: #F5F7F8
+}
+
+li {
+  display: inline;
+  text-decoration: underline;
+}
+
+ul{
+  padding: 0;
+}
+
+#link {
+  font-family: 'Rubik Glitch Pop', system-ui;
+  text-decoration: none;
+  color: #B31312;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+#profile-pic {
+  width: 200px;
+  height:200px;
+  border-radius: 150px;
+}
+.card {
+  background-color: #000713;
+  padding: 15px;
+  width: 700px;
+  margin: 25px auto;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+@media (max-width: 960px) {
+  .card {
+    width: 90%;
+  }
+
+  #profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    padding: 20px;
+  }
+
+  .card {
+    width: 85%;
+  }
+
+  #link, i {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 540px) {
+  body {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  h1, h2, h3 {
+    font-size: smaller;
+  }
+
+  #link, i {
+    font-size: 14px;
+  }
+}
+
+
+#link:hover, a:hover {
+  color: #FFF;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px #FFF, 0 0 60px #8a8a8a, 0 0 120px #353535;
+}
+
+i {
+  color: #B31312;
+  margin: 10px;
+  font-size: 30px;
+}
+
+i:hover, a:hover {
+  color: #FFF;
+}
+
+.none {
+  text-decoration: none;
+}
+
+.thunder {
+  width: 3px;
+  height: 100px;
+  position: absolute;
+  top: -5%;
+  left: 3%;
+  animation: flash 6s infinite;
+  z-index: -1;
+}
+
+.thunder2 {
+  width: 3px;
+  height: 100px;
+  position: absolute;
+  top: -10%;
+  left: 70%;
+  animation: flash 8s infinite;
+  z-index: -1;
+}
+
+.thunder3 {
+  width: 3px;
+  height: 100px;
+  position: absolute;
+  top: 190%;
+  left: 85%;
+  transform: rotate(-190deg);
+  animation: flash 7s infinite;
+  z-index: -1;
+}
+
+.thunder4 {
+  width: 3px;
+  height: 100px;
+  position: absolute;
+  top: 110%;
+  left: 55%;
+  animation: flash 7.5s infinite;
+  z-index: -1;
+}
+
+@keyframes flash {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
